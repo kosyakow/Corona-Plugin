@@ -4,8 +4,8 @@
 Please refer to WelcometoVunglePlacements2017-06-12.pdf
 
 ## Release Notes
-### VERSION 5.0.0
-* Integrated Android Publisher SDK v5.0.0 and iOS Publisher SDK v5.0.0
+### VERSION 2.3.2
+* Integrated Android Publisher SDK v5.1.0 and iOS Publisher SDK v5.1.0
 
 ## License
 The Vungle Corona Plugin is available under a commercial license. See the LICENSE file for more info.
