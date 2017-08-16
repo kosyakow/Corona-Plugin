@@ -16,6 +16,17 @@ local ew = display.contentWidth - 20
 local pos = 30
 --platform = "Android"
 
+scrollView = widget.newScrollView
+{
+    top = 0,
+    left = 0,
+    width = _W,
+    height = _H,
+    scrollWidth = _W,
+    scrollHeight = _H*5,
+    horizontalScrollDisabled = true,
+    backgroundColor = { 0.5, 0.5, 0.5 }}
+
 local margin = 10
 placements = {}
 
@@ -34,6 +45,7 @@ display.setStatusBar( display.HiddenStatusBar )
 display.setDefault( "background", 0.5 )
 
 main = display.newGroup()
+scrollView:insert(main)
 
 local function addButton(event, label, enable, y)
     return widget.newButton {
@@ -172,3 +184,5 @@ loadButton3 = addButton(handleLoad3, "Load Ad", false, pos)
 setEnabled(loadButton3, false)
 main:insert( loadButton3 )
 pos = pos + eh + margin
+
+scrollView:setScrollHeight(pos)
